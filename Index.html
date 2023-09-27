@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="PP_files/libs/clipboard/clipboard.min.js"></script>
+<script src="PP_files/libs/quarto-html/tabby.min.js"></script>
+<script src="PP_files/libs/quarto-html/popper.min.js"></script>
+<script src="PP_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="PP_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="PP_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="PP_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="PP_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.3.353">
+
+  <meta name="author" content="Giacomo Biganzoli">
+  <title>Relazione Primo anno di dottorato in Scienze per la Sanità Pubblica</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="PP_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="PP_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="PP_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="logo.css">
+  <link href="PP_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="PP_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="PP_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="PP_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="PP_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+  <script src="PP_files/libs/plotly-binding-4.10.1/plotly.js"></script>
+  <script src="PP_files/libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="PP_files/libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="PP_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+  <script src="PP_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <link href="PP_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="PP_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Relazione Primo anno di dottorato in Scienze per la Sanità Pubblica</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Giacomo Biganzoli 
+</div>
+        <p class="quarto-title-affiliation">
+            Studente di Dottorato in Scienze per la Sanità Pubblica, Dipartimento di Scienze Cliniche e Comunità (DISCO), Università degli Studi di Milano
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="outline" class="slide level2 smaller test">
+<h2>Outline</h2>
+<ul>
+<li><p><strong>Background</strong></p></li>
+<li><p><strong>Ricerca metodologica</strong></p></li>
+<li><p>Le quantità analitiche di interesse nel contesto dei rischi competitivi: funzioni azzardo e funzione di incidenza cruda cumulativa</p></li>
+<li><p>Valutare la robustezza di effetti complessi ipotizzati</p></li>
+<li><p>Gli effetti complessi riscontrati modellando SDH si trasferiscono direttamente ad effetti sulla CCI?</p></li>
+<li><p>Il modello sull’azzardo per tempi discreti con la correzione IPCW per stimare la funzione azzardo e la funzione di l’incidenza nette</p></li>
+<li><p><strong>Ricerca applicata</strong></p></li>
+<li><p><em>SOLE trial</em></p></li>
+<li><p><em>Milan 1 and Milan 3 trial</em></p></li>
+<li><p><em>Vaccine effectiveness</em></p></li>
+<li><p><strong>Conclusioni</strong></p></li>
+</ul>
+</section>
+<section id="background-un-esempio-clinico-sul-trial-milano-1" class="slide level2 smaller test">
+<h2>Background: un esempio clinico sul trial Milano 1</h2>
+<div class="fragment fade-in">
+<div class="fragment highlight-red">
+<p>Una <strong>chirurgia conservativa seguita da radio-terapia</strong>, rispetto ad una <strong>mastectomia radicale</strong>, ha lo stesso effetto nel prevenire metastasi a distanza?</p>
+</div>
+</div>
+<div>
+<ul>
+<li class="fragment">il rapporto fra i rischi associati alle terapie rimane costante a lungo termine (20 anni di follow-up)? ➡️ EFFETTI TEMPO-DIPENDENTI</li>
+<li class="fragment">Lo stato linfonodale delle pazienti ha qualche influenza sull’outcome? ➡️ MODIFICAZIONE D’EFFETTO</li>
+</ul>
+</div>
+</section>
+<section id="background-eventi-competitivi" class="slide level2 smaller test">
+<h2>Background: eventi competitivi</h2>
+<div class="fragment fade-in">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<svg width="576" height="480" viewbox="0.00 0.00 416.74 272.80" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 268.8)">
+<title>
+flowchart
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-268.8 412.74,-268.8 412.74,4 -4,4"></polygon> <g id="clust1" class="cluster">
+<title>
+cluster_1
+</title>
+<path fill="none" stroke="lightgray" d="M27.37,-64C27.37,-64 382.37,-64 382.37,-64 388.37,-64 394.37,-70 394.37,-76 394.37,-76 394.37,-208.8 394.37,-208.8 394.37,-214.8 388.37,-220.8 382.37,-220.8 382.37,-220.8 27.37,-220.8 27.37,-220.8 21.37,-220.8 15.37,-214.8 15.37,-208.8 15.37,-208.8 15.37,-76 15.37,-76 15.37,-70 21.37,-64 27.37,-64"></path> <text text-anchor="middle" x="204.87" y="-204.2" font-family="Times,serif" font-size="14.00">Competing events</text> </g> <!-- Start --> <g id="node1" class="node">
+<title>
+Start
+</title>
+<ellipse fill="none" stroke="black" cx="204.37" cy="-246.8" rx="111.2" ry="18"></ellipse> <text text-anchor="middle" x="204.37" y="-242.6" font-family="Times,serif" font-size="14.00">Progression Free Survival</text> </g> <!-- Event1 --> <g id="node2" class="node">
+<title>
+Event1
+</title>
+<polygon fill="none" stroke="black" points="386.18,-188 266.56,-188 266.56,-152 386.18,-152 386.18,-188"></polygon> <text text-anchor="middle" x="326.37" y="-165.8" font-family="Times,serif" font-size="14.00">Distant metastases</text> </g> <!-- Start&#45;&gt;Event1 --> <g id="edge4" class="edge">
+<title>
+Start-&gt;Event1
+</title>
+<path fill="none" stroke="black" d="M240.75,-229.73C246.41,-226.92 252.11,-223.9 257.37,-220.8 270.68,-212.95 284.63,-203.2 296.48,-194.41"></path> <polygon fill="black" stroke="black" points="298.82,-197.04 304.7,-188.22 294.6,-191.44 298.82,-197.04"></polygon> </g> <!-- Event2 --> <g id="node3" class="node">
+<title>
+Event2
+</title>
+<polygon fill="none" stroke="black" points="248.26,-188 160.48,-188 160.48,-152 248.26,-152 248.26,-188"></polygon> <text text-anchor="middle" x="204.37" y="-165.8" font-family="Times,serif" font-size="14.00">Other cancer</text> </g> <!-- Start&#45;&gt;Event2 --> <g id="edge5" class="edge">
+<title>
+Start-&gt;Event2
+</title>
+<path fill="none" stroke="black" d="M204.37,-228.45C204.37,-219.58 204.37,-208.56 204.37,-198.56"></path> <polygon fill="black" stroke="black" points="207.87,-198.25 204.37,-188.25 200.87,-198.25 207.87,-198.25"></polygon> </g> <!-- Event3 --> <g id="node4" class="node">
+<title>
+Event3
+</title>
+<polygon fill="none" stroke="black" points="142.89,-188 23.85,-188 23.85,-152 142.89,-152 142.89,-188"></polygon> <text text-anchor="middle" x="83.37" y="-165.8" font-family="Times,serif" font-size="14.00">Death - no disease</text> </g> <!-- Start&#45;&gt;Event3 --> <g id="edge6" class="edge">
+<title>
+Start-&gt;Event3
+</title>
+<path fill="none" stroke="black" d="M167.96,-229.76C162.31,-226.95 156.62,-223.92 151.37,-220.8 138.11,-212.92 124.24,-203.08 112.51,-194.24"></path> <polygon fill="black" stroke="black" points="114.46,-191.32 104.39,-188.02 110.2,-196.88 114.46,-191.32"></polygon> </g> <!-- Comp --> <g id="node5" class="node">
+<title>
+Comp
+</title>
+<polygon fill="none" stroke="black" points="231.37,-116 177.37,-116 177.37,-72 231.37,-72 231.37,-116"></polygon> <text text-anchor="middle" x="204.37" y="-85" font-family="Arial" font-size="30.00">🏁</text> </g> <!-- Event1&#45;&gt;Comp --> <g id="edge1" class="edge">
+<title>
+Event1-&gt;Comp
+</title>
+<path fill="none" stroke="black" d="M298.07,-151.84C280.89,-141.42 258.8,-128.02 240.38,-116.84"></path> <polygon fill="black" stroke="black" points="242.04,-113.75 231.67,-111.56 238.41,-119.74 242.04,-113.75"></polygon> </g> <!-- Event2&#45;&gt;Comp --> <g id="edge2" class="edge">
+<title>
+Event2-&gt;Comp
+</title>
+<path fill="none" stroke="black" d="M204.37,-151.84C204.37,-144.16 204.37,-134.88 204.37,-126.05"></path> <polygon fill="black" stroke="black" points="207.87,-126.03 204.37,-116.03 200.87,-126.03 207.87,-126.03"></polygon> </g> <!-- Event3&#45;&gt;Comp --> <g id="edge3" class="edge">
+<title>
+Event3-&gt;Comp
+</title>
+<path fill="none" stroke="black" d="M111.43,-151.84C128.47,-141.42 150.38,-128.02 168.65,-116.84"></path> <polygon fill="black" stroke="black" points="170.58,-119.76 177.29,-111.56 166.93,-113.79 170.58,-119.76"></polygon> </g> <!-- Obs --> <g id="node6" class="node">
+<title>
+Obs
+</title>
+<ellipse fill="none" stroke="black" cx="204.37" cy="-18" rx="204.24" ry="18"></ellipse> <text text-anchor="middle" x="204.37" y="-13.8" font-family="Times,serif" font-size="14.00">Only 1 event can be observed as the first occurred</text> </g> <!-- Comp&#45;&gt;Obs --> <g id="edge7" class="edge">
+<title>
+Comp-&gt;Obs
+</title>
+<path fill="none" stroke="black" d="M204.37,-71.99C204.37,-64.06 204.37,-54.91 204.37,-46.48"></path> <polygon fill="black" stroke="black" points="207.87,-46.31 204.37,-36.31 200.87,-46.31 207.87,-46.31"></polygon> </g> </g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in">
+<div class="fragment highlight-red">
+<p>Gli eventi competitivi impediscono l’osservazione/interpretazione delle metastasi a distanza</p>
+</div>
+</div>
+</section>
+<section id="background-le-quantità-di-interesse-in-presenza-di-rischi-competitivi" class="slide level2 smaller test">
+<h2>Background: le quantità di interesse in presenza di rischi competitivi</h2>
+<ul>
+<li><p>🤨 L’azzardo di causa-specifica di un evento K nel tempo: <span class="math display">\[
+\lambda^{csh}_{k}(t)= \lim_{\Delta t\to0}\frac{P(t \le T &lt; t + \Delta t, D = k | T \ge t )}{\Delta t}
+\]</span></p></li>
+<li><p>🤔 L’azzardo di sottodistribuzione di un evento K nel tempo: <span class="math display">\[
+\lambda^{sd}_{k}(t)= \lim_{\Delta t\to0}\frac{P(t \le T &lt; t + \Delta t, D = k | T \ge t \cup(T &lt; t \cap K \neq k ))}{\Delta t}
+\]</span></p></li>
+<li><p>😄 👍 L’incidenza cruda cumulativa (CCI) di un evento K nel tempo: <span class="math display">\[
+CCI_{k} = P(T\le t| D = k)
+\]</span></p></li>
+</ul>
+<div class="fragment fade-in">
+<div class="fragment highlight-red">
+<p>Confronto dei trattamenti in termini di rapporti o differenze fra rischi (probabilità)</p>
+</div>
+</div>
+</section>
+<section id="il-modello-sullazzardo-di-sotto-distribuzione-sdh-per-tempi-discreti-per-una-stima-quasi-diretta-della-cci" class="slide level2 smaller test">
+<h2>Il modello sull’azzardo di sotto-distribuzione (SDH) per tempi discreti per una stima (quasi) diretta della CCI</h2>
+<div class="p">
+<ul>
+<li class="fragment"><p>Il tempo di follow-up è diviso in intervalli omogenei</p></li>
+<li class="fragment"><p>A seconda dell’evento che si osserva per ogni individuo, in ogni intervallo di tempo, si calcolano dei <strong>pesi</strong> per stimare la probabilità di essere censorizzato per un individuo che è soggetto a un evento competitivo</p></li>
+<li class="fragment"><p>Modella la probabilità di osservare un dato evento in un dato intervallo di tempo condizionata al fatto di aver raggiunto il dato intervallo libero dal dato evento</p></li>
+</ul>
+</div>
+<div class="fragment fade-in p">
+<div class="fragment highlight-red p">
+<p>La stima dell’azzardo di sotto-distribuzione è eseguita pesando la funzione di massima-verosimiglianza di un modello lineare generalizzato con famiglia binomiale e una funzione di link <em>log</em> per il predittore lineare.</p>
+</div>
+</div>
+</section>
+<section id="valutare-la-robustezza-degli-effetti-complessi-ipotizzati" class="slide level2 smaller test">
+<h2>Valutare la robustezza degli effetti complessi ipotizzati</h2>
+<p>Abbiamo proposto:</p>
+<ul>
+<li><p>un <strong>estensione del modello</strong> che utilizzi classiche spline di regressione (B-splines) per una stima della forma dell’azzardo di sotto-distribuzione di base</p></li>
+<li><p><strong>un algoritmo</strong> di selezione della complessità del modello basato sul criterio di informazione AIC (possibilmente associato ad una perturbazione dei dati)</p></li>
+</ul>
+<p>Questo consente:</p>
+<ul>
+<li><p><strong>maggiore parsimoniosità</strong> del modello e una <strong>migliore stima</strong> (<strong>stabile</strong> e <strong>smussata</strong>) del SDH</p></li>
+<li><p>una stima <strong>più accurata</strong> e <strong>congruente</strong> (monotonicità garantita) della CCI</p></li>
+</ul>
+</section>
+<section id="risultati-sul-trial-milano-1" class="slide level2 test smaller">
+<h2>Risultati sul trial Milano 1</h2>
+<p>❗ Lo stato linfonodale (N+/N-) sembra influire sull’effetto dei trattamenti confrontati</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-2-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-3-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-4-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-5-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="alcune-criticità-e-il-modello-sugli-pseudovalori" class="slide level2 smaller test">
+<h2>Alcune criticità e il modello sugli pseudovalori</h2>
+<p>❓ Effetti non-lineari sulla CCI di fattori prognostici come variabili continue (es. età o dimensione del tumore)</p>
+<p>❓Stima diretta della variabilità dell’effetto stimato di fattori prognostici (intervalli di confidenza)</p>
+<p>Modelli sull’incidenza cruda cumulativa utilizzando gli pseudo-valori:</p>
+<ul>
+<li><p>Pseudovalori intesi come contributi individuali alla CCI</p></li>
+<li><p>Utilizzati come variabile di risposta in un modello lineare generalizzato con link log (GEE per la correlazione entro soggetto delle misure) per ottenere i rapporti di rischio dai coefficienti di regressione</p></li>
+</ul>
+</section>
+<section id="risultati-sul-trial-milano-1-1" class="slide level2 smaller test">
+<h2>Risultati sul trial Milano 1</h2>
+<div class="fragment quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-6-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-7-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-8-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-9-1.png" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="gli-effetti-complessi-riscontrati-modellando-sdh-sono-direttamente-trasferibili-come-effetti-sulla-cci" class="slide level2 test smaller">
+<h2>Gli effetti complessi riscontrati modellando SDH sono direttamente trasferibili come effetti sulla CCI?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<svg width="576" height="480" viewbox="0.00 0.00 384.09 565.25" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none; display: block; margin: auto auto auto auto">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 561.25)">
+<title>
+flowchart
+</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-561.25 380.09,-561.25 380.09,4 -4,4"></polygon> <!-- Start --> <g id="node1" class="node">
+<title>
+Start
+</title>
+<ellipse fill="none" stroke="black" cx="185.29" cy="-534.63" rx="71.1" ry="22.76"></ellipse> <text text-anchor="middle" x="185.29" y="-537.63" font-family="Arial" font-size="10.00">Milan 1 trial cohort </text> <text text-anchor="middle" x="185.29" y="-525.63" font-family="Arial" font-size="10.00"> 👥👥</text> </g> <!-- Resample --> <g id="node2" class="node">
+<title>
+Resample
+</title>
+<polygon fill="none" stroke="black" points="254.63,-476 115.96,-476 115.96,-432 254.63,-432 254.63,-476"></polygon> <text text-anchor="middle" x="185.29" y="-463" font-family="Arial" font-size="10.00">Sampling with replacement </text> <text text-anchor="middle" x="185.29" y="-451" font-family="Arial" font-size="10.00"> 🎲 🎲 🎲 </text> <text text-anchor="middle" x="185.29" y="-439" font-family="Arial" font-size="10.00"> N = 1000</text> </g> <!-- Start&#45;&gt;Resample --> <g id="edge1" class="edge">
+<title>
+Start-&gt;Resample
+</title>
+<path fill="none" stroke="black" d="M185.29,-511.73C185.29,-503.84 185.29,-494.79 185.29,-486.27"></path> <polygon fill="black" stroke="black" points="188.79,-486.24 185.29,-476.24 181.79,-486.24 188.79,-486.24"></polygon> </g> <!-- Augment1 --> <g id="node3" class="node">
+<title>
+Augment1
+</title>
+<polygon fill="none" stroke="black" points="171.01,-396 23.57,-396 23.57,-360 171.01,-360 171.01,-396"></polygon> <text text-anchor="middle" x="97.29" y="-375" font-family="Arial" font-size="10.00">Weights computation for SDH</text> </g> <!-- Resample&#45;&gt;Augment1 --> <g id="edge2" class="edge">
+<title>
+Resample-&gt;Augment1
+</title>
+<path fill="none" stroke="black" d="M160.31,-431.99C149.43,-422.85 136.64,-412.09 125.43,-402.66"></path> <polygon fill="black" stroke="black" points="127.5,-399.83 117.6,-396.07 123,-405.19 127.5,-399.83"></polygon> </g> <!-- Augment2 --> <g id="node4" class="node">
+<title>
+Augment2
+</title>
+<polygon fill="none" stroke="black" points="359.32,-396 189.27,-396 189.27,-360 359.32,-360 359.32,-396"></polygon> <text text-anchor="middle" x="274.29" y="-375" font-family="Arial" font-size="10.00">Pseudovalues computation for CCI</text> </g> <!-- Resample&#45;&gt;Augment2 --> <g id="edge3" class="edge">
+<title>
+Resample-&gt;Augment2
+</title>
+<path fill="none" stroke="black" d="M210.56,-431.99C221.56,-422.85 234.5,-412.09 245.84,-402.66"></path> <polygon fill="black" stroke="black" points="248.31,-405.16 253.76,-396.07 243.83,-399.78 248.31,-405.16"></polygon> </g> <!-- Modelling --> <g id="node13" class="node">
+<title>
+Modelling
+</title>
+<polygon fill="none" stroke="black" points="315.32,-324 55.27,-324 55.27,-288 315.32,-288 315.32,-324"></polygon> <text text-anchor="middle" x="185.29" y="-309" font-family="Arial" font-size="10.00">Modelling (SDH and CCI) with GLM and CCI with GEE </text> <text text-anchor="middle" x="185.29" y="-297" font-family="Arial" font-size="10.00"> - 16000 models tested</text> </g> <!-- Augment1&#45;&gt;Modelling --> <g id="edge4" class="edge">
+<title>
+Augment1-&gt;Modelling
+</title>
+<path fill="none" stroke="black" d="M119.05,-359.7C130.13,-350.88 143.77,-340.03 155.78,-330.47"></path> <polygon fill="black" stroke="black" points="158.14,-333.07 163.79,-324.1 153.79,-327.59 158.14,-333.07"></polygon> </g> <!-- Augment2&#45;&gt;Modelling --> <g id="edge5" class="edge">
+<title>
+Augment2-&gt;Modelling
+</title>
+<path fill="none" stroke="black" d="M252.29,-359.7C241.08,-350.88 227.29,-340.03 215.14,-330.47"></path> <polygon fill="black" stroke="black" points="217.06,-327.54 207.04,-324.1 212.74,-333.04 217.06,-327.54"></polygon> </g> <!-- Model1 --> <g id="node5" class="node">
+<title>
+Model1
+</title>
+<polygon fill="none" stroke="black" points="104.29,-252 50.29,-252 50.29,-216 104.29,-216 104.29,-252"></polygon> <text text-anchor="middle" x="77.29" y="-231" font-family="Arial" font-size="10.00">Model 1</text> </g> <!-- kn1 --> <g id="node9" class="node">
+<title>
+kn1
+</title>
+<polygon fill="none" stroke="black" points="76.38,-180 0.21,-180 0.21,-144 76.38,-144 76.38,-180"></polygon> <text text-anchor="middle" x="38.29" y="-159" font-family="Arial" font-size="10.00">1 interior knot</text> </g> <!-- Model1&#45;&gt;kn1 --> <g id="edge10" class="edge">
+<title>
+Model1-&gt;kn1
+</title>
+<path fill="none" stroke="black" d="M67.65,-215.7C61.61,-204.85 53.85,-190.92 47.82,-180.1"></path> </g> <!-- kn2 --> <g id="node10" class="node">
+<title>
+kn2
+</title>
+<polygon fill="none" stroke="black" points="175.88,-180 94.71,-180 94.71,-144 175.88,-144 175.88,-180"></polygon> <text text-anchor="middle" x="135.29" y="-159" font-family="Arial" font-size="10.00">2 interior knots</text> </g> <!-- Model1&#45;&gt;kn2 --> <g id="edge11" class="edge">
+<title>
+Model1-&gt;kn2
+</title>
+<path fill="none" stroke="black" d="M91.63,-215.7C100.62,-204.85 112.16,-190.92 121.12,-180.1"></path> </g> <!-- kn3 --> <g id="node11" class="node">
+<title>
+kn3
+</title>
+<polygon fill="none" stroke="black" points="275.88,-180 194.71,-180 194.71,-144 275.88,-144 275.88,-180"></polygon> <text text-anchor="middle" x="235.29" y="-159" font-family="Arial" font-size="10.00">3 interior knots</text> </g> <!-- Model1&#45;&gt;kn3 --> <g id="edge12" class="edge">
+<title>
+Model1-&gt;kn3
+</title>
+<path fill="none" stroke="black" d="M104.38,-220.1C107.38,-218.7 110.4,-217.31 113.29,-216 140.43,-203.7 171.19,-190.34 195.04,-180.11"></path> </g> <!-- kn4 --> <g id="node12" class="node">
+<title>
+kn4
+</title>
+<polygon fill="none" stroke="black" points="375.88,-180 294.71,-180 294.71,-144 375.88,-144 375.88,-180"></polygon> <text text-anchor="middle" x="335.29" y="-159" font-family="Arial" font-size="10.00">4 interior knots</text> </g> <!-- Model1&#45;&gt;kn4 --> <g id="edge13" class="edge">
+<title>
+Model1-&gt;kn4
+</title>
+<path fill="none" stroke="black" d="M104.54,-219.32C107.45,-218.1 110.41,-216.97 113.29,-216 187.34,-191.15 209.96,-200.61 285.29,-180 288.3,-179.18 291.39,-178.27 294.49,-177.32"></path> </g> <!-- Model2 --> <g id="node6" class="node">
+<title>
+Model2
+</title>
+<polygon fill="none" stroke="black" points="176.29,-252 122.29,-252 122.29,-216 176.29,-216 176.29,-252"></polygon> <text text-anchor="middle" x="149.29" y="-231" font-family="Arial" font-size="10.00">Model 2</text> </g> <!-- Model2&#45;&gt;kn1 --> <g id="edge14" class="edge">
+<title>
+Model2-&gt;kn1
+</title>
+<path fill="none" stroke="black" d="M122.14,-215.88C104.94,-205.03 82.77,-191.05 65.55,-180.19"></path> </g> <!-- Model2&#45;&gt;kn2 --> <g id="edge15" class="edge">
+<title>
+Model2-&gt;kn2
+</title>
+<path fill="none" stroke="black" d="M145.83,-215.7C143.66,-204.85 140.88,-190.92 138.71,-180.1"></path> </g> <!-- Model2&#45;&gt;kn3 --> <g id="edge16" class="edge">
+<title>
+Model2-&gt;kn3
+</title>
+<path fill="none" stroke="black" d="M170.55,-215.7C183.88,-204.85 201,-190.92 214.28,-180.1"></path> </g> <!-- Model2&#45;&gt;kn4 --> <g id="edge17" class="edge">
+<title>
+Model2-&gt;kn4
+</title>
+<path fill="none" stroke="black" d="M176.68,-219.72C179.57,-218.42 182.48,-217.16 185.29,-216 205.41,-207.72 257.55,-189.57 294.69,-176.82"></path> </g> <!-- Model3 --> <g id="node7" class="node">
+<title>
+Model3
+</title>
+<polygon fill="none" stroke="black" points="248.29,-252 194.29,-252 194.29,-216 248.29,-216 248.29,-252"></polygon> <text text-anchor="middle" x="221.29" y="-231" font-family="Arial" font-size="10.00">Model 3</text> </g> <!-- Model3&#45;&gt;kn1 --> <g id="edge18" class="edge">
+<title>
+Model3-&gt;kn1
+</title>
+<path fill="none" stroke="black" d="M194.29,-219.91C191.27,-218.55 188.23,-217.22 185.29,-216 141.66,-197.89 129.73,-196.03 85.29,-180 82.44,-178.97 79.48,-177.9 76.51,-176.83"></path> </g> <!-- Model3&#45;&gt;kn2 --> <g id="edge19" class="edge">
+<title>
+Model3-&gt;kn2
+</title>
+<path fill="none" stroke="black" d="M200.03,-215.7C186.7,-204.85 169.59,-190.92 156.31,-180.1"></path> </g> <!-- Model3&#45;&gt;kn3 --> <g id="edge20" class="edge">
+<title>
+Model3-&gt;kn3
+</title>
+<path fill="none" stroke="black" d="M224.75,-215.7C226.92,-204.85 229.71,-190.92 231.87,-180.1"></path> </g> <!-- Model3&#45;&gt;kn4 --> <g id="edge21" class="edge">
+<title>
+Model3-&gt;kn4
+</title>
+<path fill="none" stroke="black" d="M248.31,-216.41C266.09,-205.49 289.3,-191.24 307.28,-180.2"></path> </g> <!-- Model4 --> <g id="node8" class="node">
+<title>
+Model4
+</title>
+<polygon fill="none" stroke="black" points="320.29,-252 266.29,-252 266.29,-216 320.29,-216 320.29,-252"></polygon> <text text-anchor="middle" x="293.29" y="-231" font-family="Arial" font-size="10.00">Model 4</text> </g> <!-- Model4&#45;&gt;kn1 --> <g id="edge22" class="edge">
+<title>
+Model4-&gt;kn1
+</title>
+<path fill="none" stroke="black" d="M266.05,-219.32C263.13,-218.1 260.18,-216.97 257.29,-216 183.25,-191.15 160.42,-201.34 85.29,-180 82.45,-179.19 79.54,-178.3 76.62,-177.36"></path> </g> <!-- Model4&#45;&gt;kn2 --> <g id="edge23" class="edge">
+<title>
+Model4-&gt;kn2
+</title>
+<path fill="none" stroke="black" d="M266.21,-220.1C263.21,-218.7 260.19,-217.31 257.29,-216 230.16,-203.7 199.39,-190.34 175.54,-180.11"></path> </g> <!-- Model4&#45;&gt;kn3 --> <g id="edge24" class="edge">
+<title>
+Model4-&gt;kn3
+</title>
+<path fill="none" stroke="black" d="M278.96,-215.7C269.97,-204.85 258.42,-190.92 249.47,-180.1"></path> </g> <!-- Model4&#45;&gt;kn4 --> <g id="edge25" class="edge">
+<title>
+Model4-&gt;kn4
+</title>
+<path fill="none" stroke="black" d="M303.67,-215.7C310.19,-204.85 318.54,-190.92 325.03,-180.1"></path> </g> <!-- lowest --> <g id="node14" class="node">
+<title>
+lowest
+</title>
+<polygon fill="none" stroke="black" points="237.67,-108 132.92,-108 132.92,-72 237.67,-72 237.67,-108"></polygon> <text text-anchor="middle" x="185.29" y="-93" font-family="Arial" font-size="10.00">lowest value of AIC </text> <text text-anchor="middle" x="185.29" y="-81" font-family="Arial" font-size="10.00"> QIC (for GEE)</text> </g> <!-- kn1&#45;&gt;lowest --> <g id="edge26" class="edge">
+<title>
+kn1-&gt;lowest
+</title>
+<path fill="none" stroke="black" d="M74.25,-143.88C94.17,-134.39 119.11,-122.51 140.31,-112.42"></path> <polygon fill="black" stroke="black" points="141.93,-115.53 149.45,-108.07 138.92,-109.21 141.93,-115.53"></polygon> </g> <!-- kn2&#45;&gt;lowest --> <g id="edge27" class="edge">
+<title>
+kn2-&gt;lowest
+</title>
+<path fill="none" stroke="black" d="M147.65,-143.7C153.53,-135.47 160.66,-125.48 167.14,-116.42"></path> <polygon fill="black" stroke="black" points="170.11,-118.28 173.08,-108.1 164.42,-114.21 170.11,-118.28"></polygon> </g> <!-- kn3&#45;&gt;lowest --> <g id="edge28" class="edge">
+<title>
+kn3-&gt;lowest
+</title>
+<path fill="none" stroke="black" d="M222.93,-143.7C217.06,-135.47 209.92,-125.48 203.45,-116.42"></path> <polygon fill="black" stroke="black" points="206.17,-114.21 197.51,-108.1 200.47,-118.28 206.17,-114.21"></polygon> </g> <!-- kn4&#45;&gt;lowest --> <g id="edge29" class="edge">
+<title>
+kn4-&gt;lowest
+</title>
+<path fill="none" stroke="black" d="M298.6,-143.88C278.28,-134.39 252.82,-122.51 231.19,-112.42"></path> <polygon fill="black" stroke="black" points="232.41,-109.13 221.87,-108.07 229.45,-115.47 232.41,-109.13"></polygon> </g> <!-- Modelling&#45;&gt;Model1 --> <g id="edge6" class="edge">
+<title>
+Modelling-&gt;Model1
+</title>
+<path fill="none" stroke="black" d="M158.87,-287.88C144.88,-278.81 127.52,-267.55 112.41,-257.76"></path> <polygon fill="black" stroke="black" points="114.11,-254.69 103.81,-252.19 110.3,-260.57 114.11,-254.69"></polygon> </g> <!-- Modelling&#45;&gt;Model2 --> <g id="edge7" class="edge">
+<title>
+Modelling-&gt;Model2
+</title>
+<path fill="none" stroke="black" d="M176.39,-287.7C172.3,-279.73 167.34,-270.1 162.8,-261.26"></path> <polygon fill="black" stroke="black" points="165.78,-259.4 158.09,-252.1 159.55,-262.6 165.78,-259.4"></polygon> </g> <!-- Modelling&#45;&gt;Model3 --> <g id="edge8" class="edge">
+<title>
+Modelling-&gt;Model3
+</title>
+<path fill="none" stroke="black" d="M194.19,-287.7C198.29,-279.73 203.24,-270.1 207.79,-261.26"></path> <polygon fill="black" stroke="black" points="211.04,-262.6 212.5,-252.1 204.81,-259.4 211.04,-262.6"></polygon> </g> <!-- Modelling&#45;&gt;Model4 --> <g id="edge9" class="edge">
+<title>
+Modelling-&gt;Model4
+</title>
+<path fill="none" stroke="black" d="M211.71,-287.88C225.7,-278.81 243.07,-267.55 258.18,-257.76"></path> <polygon fill="black" stroke="black" points="260.28,-260.57 266.77,-252.19 256.48,-254.69 260.28,-260.57"></polygon> </g> <!-- best --> <g id="node15" class="node">
+<title>
+best
+</title>
+<polygon fill="none" stroke="black" points="185.29,-36 47.86,-18 185.29,0 322.73,-18 185.29,-36"></polygon> <text text-anchor="middle" x="185.29" y="-15" font-family="Arial" font-size="10.00">Best models selected (N = 1000)</text> </g> <!-- lowest&#45;&gt;best --> <g id="edge30" class="edge">
+<title>
+lowest-&gt;best
+</title>
+<path fill="none" stroke="black" d="M185.29,-71.7C185.29,-63.98 185.29,-54.71 185.29,-46.11"></path> <polygon fill="black" stroke="black" points="188.79,-46.1 185.29,-36.1 181.79,-46.1 188.79,-46.1"></polygon> </g> </g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="gli-effetti-complessi-riscontrati-modellando-sdh-sono-direttamente-trasferibili-come-effetti-sulla-cci-1" class="slide level2 test smaller">
+<h2>Gli effetti complessi riscontrati modellando SDH sono direttamente trasferibili come effetti sulla CCI?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
+<figcaption>1000 Predicted SDH functions of the AIC-based model selected. The higher is the intensity of the curves the higher is the frequency of selection with AIC</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+<figcaption>1000 Predicted CCI functions of the AIC-based model selected. The higher is the intensity of the curves the higher is the frequency of selection with AIC</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="sviluppi-pratici" class="slide level2 test smaller">
+<h2>Sviluppi pratici</h2>
+<div>
+<ul>
+<li class="fragment"><p>Quando si è interessati ad una stima di effetti complessi associati a dei fattori prognostici in termini di rischio, i modelli sugli-pseudo valori è preferibile rispetto al modello del SDH per tempi discreti</p></li>
+<li class="fragment"><p>Nel contesto dei tempi discreti, modellare SDH può essere interpretato come misura di dinamica congruente con l’analisi dell’incidenza cruda cumulativa</p></li>
+<li class="fragment"><p>In ambito esplorativo, un approccio di perturbazione dei dati (bootstrap) è consigliabile</p></li>
+</ul>
+</div>
+</section>
+<section id="perché-lincidenza-netta-è-altrettanto-interessante" class="slide level2 test smaller">
+<h2>Perché l’incidenza netta è altrettanto interessante</h2>
+<p>E se fossimo interessati alla probabilità di sviluppare metastasi a distanza, <strong>indipendentemente</strong> dagli altri eventi? ➡️ <strong>INCIDENZA NETTA</strong></p>
+<ul>
+<li>non considerare gli eventi competitivi porta ad una distorsione delle stime (sovrastima) dell’incidenza</li>
+</ul>
+<p>Abbiamo proposto:</p>
+<ul>
+<li>un estensione ai modelli dell’azzardo per tempi discreti con una correzione IPCW per la possibile sovrastima dell’incidenza dovuta al non considerare l’azione degli eventi competitivi</li>
+</ul>
+<p>Tuttavia:</p>
+<ul>
+<li><p>Rimangono le stesse criticità citate per SDH</p></li>
+<li><p>la correzione è efficace quando gli eventi competitivi sono associati ad uno o meglio più fattori prognostici</p></li>
+</ul>
+</section>
+<section id="un-esempio-sul-dataset-pubblico-byar-prostate-cancer" class="slide level2 test smaller">
+<h2>Un esempio sul dataset pubblico Byar Prostate Cancer</h2>
+<div class="fragment pp">
+<p>Eventi competitivi: morte per altro tumore, morte per evento cardiovascolare e morte senza evidenza di malattia Aggiustato per: peso, emoglobina glicata, trattamento, fosfatasi acida, dimensione del tumore</p>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-14-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-15-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ricerca-applicata" class="slide level2 smaller test">
+<h2>Ricerca applicata</h2>
+<div class="ppp">
+<p><em>Prognostic impact of adiposity on extended aromatase inhibition treatment in postmenopausal patients with estrogen receptor positive breast cancer: a retrospective analysis of the SOLE trial</em></p>
+</div>
+
+<img data-src="PP_files/figure-revealjs/unnamed-chunk-16-1.png" width="1440" class="r-stretch quarto-figure-center"></section>
+<section id="ricerca-applicata-1" class="slide level2 smaller test">
+<h2>Ricerca applicata</h2>
+<div class="ppp">
+<p><em>Primary breast cancer removal: the impact of the extent of surgery on clinical outcome</em></p>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-17-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="PP_files/figure-revealjs/unnamed-chunk-18-1.png" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ricerca-applicata-2" class="slide level2 smaller test">
+<h2>Ricerca applicata</h2>
+<div class="ppp">
+<p><em>Evaluation of BNT162b2 vaccine effectiveness in healthcare workers of three large University Teaching Hospital in Milan, Italy</em></p>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-aa1f9edc1ffcf491b06f" style="width:960px;height:576px;"></div>
+<script type="application/json" data-for="htmlwidget-aa1f9edc1ffcf491b06f">{"x":{"visdat":{"24092f990dfb":["function () ","plotlyVisDat"]},"cur_data":"24092f990dfb","attrs":{"24092f990dfb":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface"},"24092f990dfb.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","x":{},"y":{},"z":{},"colorbar":{"title":"2 dose"},"colorscale":[[0,1],["lightblue","royalblue"]],"inherit":true},"24092f990dfb.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"surface","x":{},"y":{},"z":{},"colorbar":{"title":"3 dose"},"colorscale":[[0,1],["pink","purple"]],"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"Time (in weeks)"},"yaxis":{"title":"Time from 2nd dose"},"zaxis":{"title":"Discrete-time Hazard"}},"hovermode":"closest","showlegend":true,"legend":{"yanchor":"top","y":0.333333333333333}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"type":"surface","frame":null},{"colorbar":{"title":"2 dose","ticklen":2,"len":0.333333333333333,"lenmode":"fraction","y":1,"yanchor":"top"},"colorscale":[[0,"lightblue"],[1,"royalblue"]],"showscale":true,"type":"surface","x":[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,13.5,14.5,15.5,16.5,17.5,18.5,19.5,20.5,21.5,22.5,23.5,24.5,25.5,26.5,27.5,28.5,29.5,30.5,31.5,32.5],"y":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38],"z":[[0.000562689261496411,0.000167167839483989,8.20055292831028e-05,6.20147817900881e-05,6.74799991757566e-05,9.86123767108508e-05,0.000180635111309265,0.00038708307895426,0.000905533967632523,0.00215759047265876,0.00488339363549773,0.00979253938053215,0.0162482109594488,0.0210625961944622,0.023885673060048,0.0218049071256432,0.0144760926050981,0.00898360412914502,0.00614278475692182,0.00489764099074038,0.00477896881888597,0.00560816652492268,0.0072836751594091,0.00960793397982335,0.0118199015491132,0.0125089714855309,0.0114656808697345,0.00995749535894916,0.00816793777116731,0.00572342623620563,0.00308274438912238,0.00114794826291941,0.000265962198143073],[0.00055965611691989,0.000166266376033199,8.15632716673028e-05,6.16803280630915e-05,6.71160728039457e-05,9.80805667880139e-05,0.000179661037768672,0.000384996164912447,0.000900654403519542,0.00214597856333329,0.0048571831688213,0.00974023813069221,0.0161619931959087,0.0209513759689538,0.0237599074994033,0.0216898540038619,0.014399140583356,0.00893558435674181,0.00610985630678978,0.00487135442907315,0.00475331615065841,0.00557808781575618,0.00724467553702711,0.00955660917851915,0.0117569008661,0.0124423442689029,0.0114045464116577,0.00990432190325031,0.00812424221168298,0.00569273288478743,0.00306616870513479,0.00114176391693336,0.000264528120637641],[0.000556639313231147,0.000165369772978689,8.11233989630091e-05,6.13476779775743e-05,6.67541089923608e-05,9.7551624600557e-05,0.000178692215973868,0.000382920497918385,0.000895801109870504,0.00213442901432077,0.00483111269769061,0.00968821348503098,0.0160762254527632,0.0208407305345661,0.023634788100063,0.0215753945675403,0.0143225916783362,0.00888781896090256,0.00607710329057659,0.00484520826538317,0.00472780052732462,0.00554816952993717,0.00720588321798614,0.00950555591867734,0.0116942320061093,0.0123760674847938,0.0113437341790068,0.00985142957067029,0.00808077850340366,0.00566220319702417,0.00304968187470229,0.00113561285001901,0.000263101773693441],[0.00055363876249252,0.000164478004123438,8.06858983114665e-05,6.10168218080521e-05,6.63940971588346e-05,9.70255346874941e-05,0.000177728617620011,0.000380856017404483,0.0008909739455046,0.00212294149215794,0.00480518148167255,0.00963646400979939,0.0159909054602451,0.0207306570524842,0.0235103117106196,0.0214615258941737,0.014246443841341,0.00884030661865745,0.00604452478515889,0.00481920175715176,0.00470242122375042,0.00551841082148541,0.0071672971165509,0.00945477279171006,0.0116318932636932,0.0123101393373299,0.0112832425131959,0.00979881690503658,0.00803754543643759,0.00563183631025307,0.0030332834244518,0.00112949488350276,0.000261683115659872],[0.000550654377238528,0.000163591043411535,8.02507569232287e-05,6.06877498814692e-05,6.60360267782443e-05,9.65022816711634e-05,0.000176770214554702,0.000378802663128821,0.000886172769997022,0.0021115156651493,0.00477938878417181,0.00958498827836972,0.0159060309591968,0.020621152696525,0.023386475193264,0.0213482450741587,0.0141706950334155,0.00879304601365543,0.0060121198721473,0.00479333416570845,0.0046771775185635,0.00548881084877882,0.0071289161524996,0.00940425839603746,0.0115698829417195,0.0122445580393386,0.0112230697637525,0.00974648245739874,0.00799454180698974,0.00560163136625112,0.00301697288350077,0.00112340983966593,0.000260272105110502],[0.000547686070473342,0.00016270886492741,7.98179620777834e-05,6.03604525769155e-05,6.56798873822033e-05,9.59818502567768e-05,0.000175816978777165,0.000376760375173402,0.000881397443674942,0.00210015120335787,0.0047537338724119,0.00953378487120357,0.0158215997010298,0.0205122146530956,0.023263275423746,0.0212355492107518,0.0140953432253085,0.00874603583613391,0.0059798876378635,0.00476760475621183,0.00465206869413465,0.00545936877453216,0.00709073925109781,0.00935401133705599,0.0115081993513364,0.0121793218123116,0.0111632142882832,0.00969442478599594,0.00795176641733347,0.00557158751121338,0.00300074978344446,0.0011173575417397,0.000258868700841865],[0.000544733755668281,0.000161831442895092,7.93875011231831e-05,6.0034920325346e-05,6.53256685587567e-05,9.54642252319754e-05,0.000174868882437432,0.000374729093942417,0.000876647827613516,0.00208884777859607,0.00472821601741614,0.00948285237581991,0.0157376094476842,0.0204038401211521,0.0231407092913339,0.0211234354200289,0.0140203863974334,0.00869927478288851,0.00594782717331736,0.0047420127976306,0.00462709403655918,0.00543008376577576,0.00705276534307243,0.00930403022710687,0.0114468408119364,0.0121144288863682,0.0111036744524381,0.00964264245622472,0.00790921807578224,0.00554170389573138,0.00298461365834322,0.00111133781390005,0.000257472861872262],[0.00054179734675931,0.000160958751677444,7.89593614756737e-05,5.97111436093007e-05,6.49733599520762e-05,9.49493914663839e-05,0.000173925897835533,0.000372708760160518,0.000871923783631905,0.00207760506441656,0.00470283449398879,0.00943218938676328,0.015654057971588,0.020296026312158,0.0230187736987753,0.0210119008308435,0.0139458225398294,0.00865276155724304,0.00591593757418417,0.00471655756272459,0.00460225283563836,0.00540095499383437,0.00701499336458571,0.00925431368544462,0.0113858056511213,0.0120498775002185,0.0110444486298761,0.00959113404060684,0.00786689559666136,0.00551197967477161,0.00296856404470982,0.00110535048126282,0.000256084547440569],[0.000538876758144555,0.000160090765775429,7.85335306193287e-05,5.93891129626276e-05,6.46229512621584e-05,9.44373339111706e-05,0.000172987997420688,0.000370699314871099,0.000867225174289321,0.00206642273610322,0.00467758858069625,0.00938179450557204,0.0155709430556167,0.0201887704500428,0.0228974655622567,0.020900942584786,0.0138716496521222,0.00860649486901945,0.005884217940782,0.00469123832802596,0.00457754438486095,0.00537198163430608,0.00697742225720951,0.00920486033820577,0.0113250922046663,0.0119856659011274,0.0109855352022299,0.0095398981187572,0.00782479780028,0.00548241400765409,0.00295260048149694,0.00109939536987868,0.000254703717005055],[0.000535971904681839,0.000159227459827359,7.81099961056829e-05,5.90688189702053e-05,6.42744322445237e-05,9.39280375986072e-05,0.000172055153790503,0.00036870069943459,0.000862551862881091,0.00205530047066209,0.00465247755984838,0.00933166634074678,0.0154882624930534,0.0200820697711609,0.0227767818113632,0.0207905578361419,0.0137978657434854,0.00856047343450801,0.00585266737804911,0.00466605437382041,0.00455296798138485,0.00534316286704134,0.00694005096789946,0.00915566881837756,0.011264698816485,0.0119217923448775,0.0109269325590712,0.00948893327735191,0.00778292351290318,0.00545300605803107,0.00293672251008457,0.00109347230672819,0.000253330330242203],[0.000533082701686215,0.000158368808608159,7.76887455533696e-05,5.87502522676688e-05,6.39277927099172e-05,9.34214876416328e-05,0.000171127339690177,0.000366712855526753,0.000857903713434739,0.00204423794681242,0.0046275007174798,0.00928180350771878,0.0154060140875475,0.0199759215242495,0.022656719389039,0.0206807437518512,0.0137244688326014,0.00851469597643751,0.00582128499552149,0.0046410049841285,0.00452852292601878,0.0053144978761221,0.00690287844896942,0.00910673776576688,0.0112046238385941,0.0118582550957335,0.0108686390978763,0.00943823811009639,0.0077412715667239,0.00542375499386575,0.00292092967426759,0.0010875811197169,0.000251964347045536],[0.000530209064927527,0.000157514787028632,7.72697666477585e-05,5.84334035411351e-05,6.35830225240112e-05,9.29176692334185e-05,0.000170204528011701,0.000364735725136992,0.000853280590706098,0.00203323484497771,0.00460265734333143,0.00923220462881863,0.0153241956530753,0.0198703229703875,0.022537275251546,0.0205714975114665,0.0136514569476233,0.00846916122394562,0.0057900699073105,0.00461608944668711,0.0045042085232041,0.00528598584984098,0.00686590365806591,0.00905806582696923,0.0111448656310779,0.0117950524264058,0.0108106532239914,0.00938781121769375,0.00769984079983538,0.00539465998741118,0.00290522152024336,0.00108172163767039,0.000250605727524452],[0.000527350910627978,0.000156665370134725,7.68530471405972e-05,5.81182635269324e-05,6.32401116071092e-05,9.24165676469367e-05,0.000169286691793075,0.000362769250566677,0.00084868236017543,0.00202229084727686,0.00457794673083198,0.00918286833324497,0.0152428050138994,0.0197652713829539,0.0224184463684247,0.0204628163071119,0.0135788281261358,0.00842386791254933,0.00575902123208054,0.0045913070529309,0.00448002408099667,0.00525762598068059,0.00682912555814271,0.0090096516553378,0.011085422562054,0.0117321826180141,0.0107529733505982,0.00933765120781303,0.00765863005620346,0.00536572021518921,0.00288959759659939,0.00107589369032946,0.000249254432003066],[0.000524508155459706,0.000155820533106809,7.64385748496525e-05,5.78048230113282e-05,6.28990499338516e-05,9.19181682345298e-05,0.000168373804217519,0.000360813374427464,0.000844108888043577,0.0020114056375153,0.00455336817707958,0.00913379325703326,0.0151618400045287,0.0196607640475863,0.0223002297224527,0.0203546973434417,0.0135065804151168,0.00837881478411551,0.00572813809302695,0.00456665709797387,0.00445596891104881,0.00522941746529292,0.00679254311743554,0.00896149391095272,0.0110262930076377,0.0116696439600518,0.0106955978986796,0.00928775669505778,0.00761763818563899,0.00533693485796951,0.00287405745430107,0.00107009710834525,0.000247910421019053],[0.000521680716542385,0.000154980251258947,7.60263376583558e-05,5.74930728302615e-05,6.25598275329229e-05,9.14224564274842e-05,0.000167465838612694,0.000358868039639635,0.000839560041228126,0.00200057890117619,0.0045289209828235,0.00908497804302474,0.0150812984696781,0.019556798262139,0.0221826223096046,0.0202471378375987,0.0134347118708989,0.00833400058683157,0.00569741961785382,0.00454213888059108,0.00443204232859132,0.0052013595044788,0.00675615530943684,0.00891359126059031,0.0109674753519076,0.0116074347503498,0.0106385252969854,0.00923812630093461,0.00757686404377045,0.00530830310074873,0.00285860064667939,0.00106433172327441,0.000246573655322507],[0.000518868511440828,0.000154144500038182,7.56163235154483e-05,5.71830038690739e-05,6.22224344867604e-05,9.0929417735604e-05,0.000166562768449921,0.000356933189430442,0.000835035687359593,0.00198981032541168,0.00450460445244594,0.00903642134083544,0.0150011782642288,0.019453371336642,0.0220656211390116,0.0201401350191728,0.0133632205591313,0.00828942407517624,0.0056668649387521,0.00451775170320033,0.00440824365241563,0.00517345130316747,0.00671996111287064,0.00886594237769256,0.0109089679868706,0.0115455532950411,0.0105817539819981,0.0091887586538219,0.00753630649201655,0.00527982413272969,0.00284322672941888,0.00105859736757431,0.000245244095874792],[0.000516071458162603,0.000153313255023817,7.52085204346305e-05,5.68746070622446e-05,6.1886860931265e-05,9.04390377467889e-05,0.000165664567343415,0.000355008767332461,0.000830535694777636,0.00197909959903421,0.00448041789394389,0.00898812180682535,0.014921477253188,0.0193504805932588,0.0219492232329204,0.0200336861301599,0.0132921045547411,0.00824508400989046,0.0056364731923776,0.00449349487184405,0.004384572204856,0.00514569207039627,0.00668395951166757,0.00881854594233661,0.0108507693124276,0.0114839979085247,0.0105252823978992,0.00913965238893857,0.00749596439755908,0.00525149714730074,0.00282793526054541,0.00105289387459825,0.000243921703847412],[0.00051328947515567,0.000152486491926707,7.48029164942107e-05,5.65678733931244e-05,6.15530970555124e-05,8.99513021266129e-05,0.00016477120904951,0.000353094717181956,0.000826059932527274,0.00196844641250782,0.00445636061891108,0.00894007810406764,0.0148421933116493,0.0192481233662454,0.0218334256266528,0.0199277884249199,0.0132213619418958,0.00820097915794833,0.00560624351982926,0.00446936769617115,0.00436102731177176,0.00511808101929032,0.00664814949493996,0.00877140064120439,0.0107928777363388,0.01142276691343,0.010469108996535,0.00909080614831303,0.00745583663331573,0.00522332134201512,0.00281272580041422,0.00104722107859074,0.000242606440620882],[0.000510522481306026,0.000151664186588546,7.43994998367586e-05,5.62627938936736e-05,6.12211331014675e-05,8.94661966179069e-05,0.000163882667465897,0.000351190983117249,0.000821608270355141,0.00195785045793953,0.00443243194252005,0.00889228890231806,0.0147633243247529,0.0191462970019081,0.0217182253685645,0.0198224391701356,0.0131509908139643,0.00815710829252824,0.00557617506662739,0.00444536948941905,0.00433760830252972,0.00509061736704244,0.006612530056957,0.0087245051675524,0.0107352916741891,0.0113618586405818,0.0104132322373829,0.00904221858075222,0.0074159220779131,0.00519529591857049,0.00279759791169788,0.00104157881468276,0.000241298267783603],[0.000507770395935355,0.00015084631498117,7.39982586687578e-05,5.59593596441991e-05,6.08909593636985e-05,8.89837070403418e-05,0.000162998916630866,0.000349297509577099,0.000817180578705748,0.0019473114290708,0.00440863118350424,0.00884475287798435,0.0146848681876456,0.0190449988585625,0.0216036195200048,0.0197176356447706,0.0130809892734796,0.00811347019298407,0.00554626698269208,0.00442149956839577,0.00431431450998662,0.00506330033489299,0.00657710019712004,0.00867785822118152,0.0106780095493544,0.0113012714289643,0.0103576505875176,0.00899388834181068,0.00737621961565979,0.00516742008278853,0.00278255115937443,0.00103596691888704,0.000239997147130748],[0.000505033138798705,0.00015003285320585,7.35991812602622e-05,5.56575617730941e-05,6.05625661890941e-05,8.85038192900148e-05,0.000162119930722544,0.000347414241299093,0.000812776728717768,0.00193682902126893,0.00438495766414019,0.00879746871409589,0.0146068228054414,0.0189442263064913,0.021489605155275,0.0196133751400284,0.0130113554321006,0.00807006364481648,0.00551651842232164,0.00439775725346204,0.0042911452704716,0.00503612914810996,0.006541858919938,0.00863145850840699,0.0106210297929666,0.0112410036256863,0.0103023625215778,0.00894581409375985,0.00733672813651958,0.00513969304459455,0.00276758511071544,0.00103038522809342,0.000238703040663147],[0.000502310630082166,0.000149223777492601,7.32022559445534e-05,5.53573914565796e-05,6.02359439765815e-05,8.80265193390384e-05,0.00016124568405815,0.000345541123318044,0.000808396592220345,0.00192640293151864,0.00436141071022983,0.00875043510027329,0.0145291860931817,0.0188439767279033,0.021376179361588,0.0195096549593106,0.0129420874105744,0.00802688743964433,0.00548692854417122,0.00437414186851356,0.00426809992376885,0.00500910303596902,0.00650680523500285,0.00858530474202848,0.0105643508438803,0.0111810535859457,0.0102473665217322,0.00889799450555734,0.00729744653608472,0.00511211401799735,0.00275269933527426,0.00102483358006416,0.000237415910586187],[0.000499602790400565,0.000148419064199486,7.28074711177999e-05,5.50588399184456e-05,5.99110831768456e-05,8.75517932351301e-05,0.000160376151093238,0.000343678100964393,0.000804040041729414,0.00191603285841356,0.00433798965108286,0.00870365073269829,0.0144519559757958,0.0187442475168911,0.0212633392390268,0.019406472418175,0.0128731833386984,0.00798394037517625,0.00545749651123142,0.00435065274096333,0.00424517781310029,0.00498222123173374,0.0064719381569652,0.00853939564130024,0.0105079711486384,0.0111214196729945,0.0101926610776468,0.00885042825281649,0.00725837371554938,0.005084682221069,0.00273789340487424,0.00101931181342936,0.000236135719308707],[0.000496909540795172,0.000147618689811927,7.24148152387187e-05,5.47618984297958e-05,5.95879742920508e-05,8.70796271012061e-05,0.000159511306420962,0.000341825119862625,0.000799706950444051,0.00190571850214784,0.00431469381949915,0.00865711431408355,0.0143751303880618,0.0186450360793902,0.0211510819005038,0.0193038248442944,0.0128046413552826,0.00794122125518218,0.00542822149080707,0.00432728920172404,0.00422237828510834,0.00495548297263585,0.00643725670551002,0.00849372993190143,0.010451889161438,0.0110621002581037,0.010138244686451,0.00880311401777582,0.00721950858168312,0.00505739687592481,0.00272316689359706,0.00101381976768229,0.000234862429441911],[0.000494230802731417,0.000146822630942024,7.20242768282377e-05,5.44665583087919e-05,5.92666078755628e-05,8.66100071349752e-05,0.000158651124771329,0.000339982125929696,0.000795397192242828,0.00189545956450783,0.00429152255175131,0.00861082455364275,0.0142987072745667,0.018546339833137,0.0210394044717192,0.0192017095774149,0.0127364596081125,0.00789872888946519,0.00539910265449606,0.00430405058519054,0.00419970068983873,0.00492888749985563,0.0064027599053324,0.00844830634590646,0.0103961033440973,0.0110030937205289,0.0100841158527046,0.0087560504892688,0.00718085004680449,0.00503025720870337,0.00270851937777105,0.00100835728317489,0.000233596003798277],[0.000491566498096624,0.000146030864327866,7.16358444691615e-05,5.41728109204006e-05,5.89469745316736e-05,8.61429196085373e-05,0.000157795581010467,0.000338149065373458,0.000791110641680205,0.00188525574886368,0.00426847518756725,0.00856478016706063,0.0142226845896673,0.0184481562076272,0.0209283040911203,0.0191001239693142,0.0126686362539109,0.00785646209383329,0.00537013917816831,0.00428093622922243,0.00417714438072344,0.00490243405850232,0.00636844678611348,0.00840312362175552,0.0103406121660213,0.0109443984474749,0.0100302730883651,0.00870923636269355,0.00714239702875479,0.00500326244954666,0.00269395043595966,0.00100292420111316,0.000232336405390478],[0.000488916549197751,0.000145243366832859,7.1249506805837e-05,5.38806476761406e-05,5.8629064915326e-05,8.56783508679814e-05,0.000156944650139889,0.000336325884691101,0.000786847173982923,0.00187510676016114,0.00424555107011292,0.00851897987646329,0.0141470602974512,0.0183504826440745,0.0208177779098599,0.0189990653837601,0.0126011694583012,0.00781441969007138,0.00534133024194473,0.00425794547512664,0.00415470871456373,0.00487612189759471,0.00633431638249639,0.00835818050422518,0.0102854141041684,0.0108860128340614,0.00997671491275431,0.00866267033998276,0.00710414845087185,0.00497641183258029,0.00267945964894991,0.000997520363552625,0.000231083597430302],[0.000486280878759144,0.000144460115445052,7.08652525438228e-05,5.35900600338328e-05,5.8312869731842e-05,8.52162873329883e-05,0.000156098307295769,0.000334512530667604,0.000782606665046429,0.00186501230491325,0.004222749545975,0.00847342241038845,0.0140718323716973,0.0182533165953686,0.0207078230917552,0.0188985311964688,0.0125340573957698,0.00777260050591332,0.00531267503017641,0.00423507766764024,0.00413239305151318,0.00484995027004175,0.00630036773406243,0.00831347574439909,0.0102305076430174,0.0108279352832882,0.00992343985252556,0.00861635112957371,0.00706610324196398,0.00494970459589374,0.00266504659974094,0.000992145613393875,0.000229837543327586],[0.000483659409920307,0.000143681087276461,7.04830704495587e-05,5.33010394973497e-05,5.79983797366501e-05,8.47567154964331e-05,0.000155256527748212,0.000332708950374184,0.000778388991431312,0.00185497209119221,0.00420006996514382,0.00842810650375593,0.013996998795837,0.0181566555260343,0.0205984368132463,0.0187985187950634,0.0124672982496288,0.00773100337501408,0.00528417273142382,0.00421233215491315,0.00411019675506086,0.00482391843262323,0.00626659988530716,0.00826900809963884,0.0101758912745335,0.0107701642060011,0.00987044644163121,0.00857027744637833,0.00702826033628399,0.00492313998152081,0.00265071087353257,0.000986799794378033,0.00022859820668915],[0.000481052066233676,0.000142906259562406,7.01029493500382e-05,5.30135776163681e-05,5.76855857350162e-05,8.42996219239921e-05,0.000154419286900539,0.000330915091166769,0.000774194030359764,0.00184498582862116,0.0041775116809962,0.00838303089783819,0.0139225575629151,0.0180604969121892,0.0204896162633552,0.0186990255790323,0.0124008902119792,0.00768962713692201,0.00525582253843606,0.00418970828849109,0.00408811919201457,0.00479802564597066,0.0062330118856168,0.00822477633355484,0.0101215634981352,0.0107126980208571,0.00981773322128981,0.00852444801175342,0.00699061867350331,0.00489671723542004,0.00263645205771398,0.000981482751082318,0.000227365551317742],[0.000478458771662411,0.000142135609660848,6.97248781324818e-05,5.27276659861217e-05,5.73744785817745e-05,8.38449932537495e-05,0.000153586560288567,0.000329130900684465,0.000770021659712054,0.00183505322836613,0.00415507405027853,0.00833819434023097,0.0138485066755508,0.0179648382415027,0.0203813586436441,0.0186000489596874,0.0123348314836736,0.00764847063705123,0.00522762364813031,0.00416720542329847,0.00406615973248415,0.00477227117454805,0.00619960278924452,0.00818077921597739,0.0100675228206617,0.0106555351542904,0.0097652987399536,0.00847886155347098,0.00695317719868625,0.00487043560745529,0.00262226974185241,0.000976194328915597,0.000226139541210978],[0.0004758794505782,0.000141369115051726,6.93488457440134e-05,5.24432962471561e-05,5.70650491810607e-05,8.33928161958085e-05,0.000152758323579898,0.000327356326848038,0.000765871758023022,0.00182517400312791,0.00413275643308978,0.00829359558482408,0.013774844145899,0.0178696770131543,0.0202736611681739,0.0185015863601227,0.0122691202742797,0.00760753272665409,0.0051995752615713,0.00414482291762149,0.00404431774986487,0.00474665428663297,0.00616637165528699,0.00813701552292781,0.010013767756339,0.0105986740404782,0.00971314155327613,0.00843351680568864,0.00691593486226431,0.00484429435137641,0.00260816351768189,0.000970934374113979,0.000224920140560303],[0.000473314027759069,0.000140606753336304,6.89748411913362e-05,5.21604600850837e-05,5.6757288486046e-05,8.29430775319026e-05,0.000151934552573206,0.000325591317858403,0.000761744204478597,0.00181534786713406,0.00411055819286471,0.00824923339177223,0.0137015679956117,0.0177750107377925,0.0201665210634633,0.0184036352151728,0.012203754802043,0.00756681226279379,0.00517167658395086,0.00412256013309121,0.00402259262082089,0.00472117425429758,0.00613331754766096,0.00809348403658972,0.00996029682674795,0.0105421131213068,0.00966126022407995,0.00838841250892017,0.00687889062001064,0.00481829272479992,0.00259413297909208,0.000965702733736416,0.000223707313749942],[0.000470762428387209,0.000139848502236515,6.86028535404134e-05,5.18791492303423e-05,5.64511874986735e-05,8.24957641150102e-05,0.000151115223197539,0.000323835822195123,0.000757638878912323,0.00180557453613091,0.00408847869635707,0.00820510652746607,0.0136286762557989,0.0176808369374925,0.0200599355684466,0.0183061929713711,0.0121387332938504,0.00752630810831704,0.00514392682456761,0.00410041643466676,0.00400098372526884,0.00469583035338975,0.00610043953507994,0.00805018354528033,0.00990710856079053,0.0104858508463372,0.00960965332232435,0.00834354741000616,0.00684204343301456,0.00479242998918989,0.00258017772211712,0.00096049925566034,0.00022250102535587],[0.000468224578046814,0.000139094339594313,6.82328719161472e-05,5.1599355457952e-05,5.61467372693946e-05,8.20508628689706e-05,0.00015030031151161,0.000322089788614909,0.000753555661801912,0.0017958537273756,0.00406651731362292,0.0081612137645032,0.0135561669669904,0.0175871531457158,0.0199539019344329,0.0182092570869084,0.0120740539851934,0.00748601913182689,0.00511632519680669,0.00407839119061861,0.00397949044636137,0.00467062186351433,0.00606773669103096,0.00800711284342201,0.00985420149465771,0.0104298856727718,0.00955831942507334,0.00829892026208473,0.00680539226765626,0.00476670540983878,0.00256629734492456,0.000955323788577313,0.000221301240144777],[0.000465700402721926,0.000138344243371029,6.78648855020628e-05,5.13210705872761e-05,5.58439288969084e-05,8.16083607881028e-05,0.000149489793703104,0.00032035316615014,0.000749494434265813,0.00178618515962815,0.00404467341800403,0.00811755388165941,0.0134840381790972,0.0174939569072679,0.0198484174250639,0.0181128250315912,0.012009715120132,0.0074459442076556,0.00508887091811962,0.00405648377251191,0.00395811217047092,0.0046455480680144,0.0060352080937515,0.00796427073151375,0.00980157417179668,0.0103742160654204,0.00950725711646359,0.0082545298245624,0.00676893609558146,0.0047411182558485,0.00255249144780436,0.000950176181988705,0.000220107923073047],[0.000463189828794297,0.000137598191646724,6.74988835399915e-05,5.10442864817815e-05,5.5542753527901e-05,8.11682449368249e-05,0.000148683646087983,0.000318625904107375,0.000745455078059793,0.00177656855314365,0.00402294638611131,0.00807412566385997,0.0134122879513729,0.0174012457782576,0.0197434793162732,0.0180168942868003,0.0119457149512575,0.00740608221583769,0.00506156321000424,0.00403469355518991,0.00393684828717344,0.00462060825395272,0.00600285282620641,0.00792165601610293,0.00974922514287834,0.0103188404966666,0.0094564649876726,0.00821037486308509,0.00673267389367636,0.00471566780011141,0.00253875963315787,0.000945056286201397,0.000218921039285735],[0.000460692783041259,0.000136856162619555,6.7134855329757e-05,5.07689950488012e-05,5.52432023567874e-05,8.07305024492778e-05,0.000147881845109796,0.000316907952065893,0.000741437475573549,0.00176700362966437,0.00400133559780842,0.00803092790215104,0.0133409143523758,0.0173090173260552,0.0196390848962438,0.0179214623454494,0.011882051739657,0.00736643204208301,0.0050344012979847,0.00401301991675749,0.00391569818923225,0.00459580171209321,0.00597066997606505,0.00787926750975705,0.00969715296576494,0.0102637574464342,0.0094059416368869,0.00816645414950911,0.00669660464404251,0.00469035331929156,0.00252510150548696,0.000939963952323498,0.000217740554115554]],"frame":null},{"colorbar":{"title":"3 dose","ticklen":2,"len":0.333333333333333,"lenmode":"fraction","y":0.666666666666667,"yanchor":"top"},"colorscale":[[0,"pink"],[1,"purple"]],"showscale":true,"type":"surface","x":[0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5,12.5,13.5,14.5,15.5,16.5,17.5,18.5,19.5,20.5,21.5,22.5,23.5,24.5,25.5,26.5,27.5,28.5,29.5,30.5,31.5,32.5],"y":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38],"z":[[0.000242321975854339,7.19745670468669e-05,3.5305990760955e-05,2.66990336493784e-05,2.90520473390397e-05,4.24561687526238e-05,7.77735340238173e-05,0.000166680547251894,0.000390044133332695,0.000930010722832491,0.0021082212593126,0.00423944529647675,0.0070603761698564,0.00917778121780513,0.0104248677466609,0.00950530159873776,0.00628393212540967,0.00388743525790472,0.00265382459202083,0.00211438922165011,0.00206301675102589,0.00242211717037385,0.00314876855229915,0.00415908511212183,0.00512309125386784,0.00542389718570663,0.00496855257350882,0.00431126630875417,0.00353282608409142,0.00247205959661201,0.00132949164483649,0.00049452848226371,0.000114517189938741],[0.000249158167565976,7.40054110889218e-05,3.6302226896612e-05,2.74524122385656e-05,2.98718199858412e-05,4.36541540692849e-05,7.99679894105981e-05,0.000171383169930649,0.000401046071414126,0.000956228877775438,0.00216758256582533,0.00435855349503397,0.00725816138280955,0.00943431858401315,0.0107158866785308,0.00977090353581774,0.00646010800488102,0.00399669334760801,0.00272850647729408,0.00217392382148435,0.0021211079371197,0.00249029480531296,0.00323733355821009,0.00427594526773325,0.00526689437660748,0.00557609648642944,0.00510804012924851,0.00443238335343833,0.00363215406685242,0.00254163942685429,0.00136695625328865,0.000508476101365448,0.000117748280983264],[0.000256187166972928,7.60935533383163e-05,3.73265729753457e-05,2.8227048648713e-05,3.07147237580629e-05,4.48859414090549e-05,8.22243583842021e-05,0.000176218446135941,0.000412358212108044,0.000983185427630599,0.0022286115791793,0.00448099300713293,0.00746144559890981,0.00969795649779066,0.0110149392196252,0.0100438517997211,0.00664119012896757,0.00410900951734311,0.00280528409120949,0.00223513097508837,0.00218083130156765,0.00256038657549853,0.0033283813032149,0.00439607441418761,0.00541471202648116,0.00573254201638088,0.00525142300298003,0.00455688738503136,0.0037342642627411,0.00261317255552865,0.00140547511548149,0.00052281689159587,0.000121070525899347],[0.000263414409188578,7.82406101563726e-05,3.83798220913278e-05,2.90235426699993e-05,3.15814112947395e-05,4.61524844336514e-05,8.45443874612509e-05,0.000181190116475258,0.000423989294337208,0.00101090112659423,0.00229135493908065,0.00460685614783377,0.00767037934228023,0.00996888751522675,0.0113222420232763,0.0103243453221894,0.00682731325350952,0.00422446863944041,0.0028842159069379,0.00229805745648582,0.00224223249929492,0.00263244594049328,0.00342198091148073,0.00451956317096811,0.00556665502619367,0.00589335084135892,0.00539880879874941,0.00468487223223528,0.00383923400595239,0.00268671352431229,0.00144507781319598,0.00053756192433363,0.00012448649564124],[0.000270845482376541,8.04482434870893e-05,3.94627897116583e-05,2.9842511013739e-05,3.24725536466287e-05,4.74547637056276e-05,8.69298724090729e-05,0.000186302026958394,0.000435948302795393,0.00103939730982695,0.00235586057741046,0.00473623774151813,0.00788511712314808,0.010247309189126,0.0116380172963897,0.0106125881806543,0.00701861572899577,0.00434315790060829,0.00296536200987118,0.00236275133552608,0.00230535845062207,0.00270652783687871,0.0035182034046744,0.0046465046225866,0.00572283718663583,0.00605864317495346,0.00555030802612038,0.00481643427255457,0.00394714274625255,0.0027623183811319,0.0014857947534096,0.000552722582045149,0.000127998833639657],[0.000278486132051235,8.27181621417912e-05,4.05763143073025e-05,3.06845877896451e-05,3.33888407954951e-05,4.87937874469059e-05,8.93826596335886e-05,0.000191558131963079,0.000448244474835403,0.00106869590958049,0.00242217775332964,0.00486923518731025,0.00810581753575852,0.0105334241858619,0.0119624929253563,0.0109087897176176,0.0072152395903778,0.00446516686269648,0.00304878414097487,0.00242926201308436,0.00237025737567138,0.00278268871814644,0.00361712175250526,0.00477699438295334,0.00588337538340063,0.00622854245864648,0.00570603417481135,0.00495167249865089,0.00405807210491185,0.00284004472080628,0.00152765719103811,0.000568310566987152,0.000131610257842865],[0.000286342265498759,8.50521231199387e-05,4.1721258001809e-05,3.15504249965462e-05,3.43309821880312e-05,5.01705923186827e-05,9.19046476062525e-05,0.000196962497283796,0.000460887307548777,0.00109881947176431,0.00249035708929772,0.00500594852604331,0.00833264335825127,0.0108274404042177,0.012295902603861,0.0112131646620037,0.00741733064877685,0.00459058752491974,0.00313454574124359,0.00249764025717781,0.00243697882967051,0.00286098659561449,0.00371881092452559,0.00491113066127332,0.00604838963502491,0.0064031754436886,0.00586610379102966,0.00509068858625933,0.0041721059320044,0.00291995172673089,0.00157069725228821,0.00058433791015046,0.000135323562815113],[0.000294419956321414,8.74519329671097e-05,4.28985072383097e-05,3.24406930269375e-05,3.52997072848304e-05,5.15862442233074e-05,9.44977883311467e-05,0.000202519303266117,0.000473886565042407,0.00112979117296358,0.00256045060802685,0.00514648050879789,0.0085657616545126,0.0111295710962045,0.0126384859625538,0.0115259332524646,0.00762503858510297,0.00471951438756893,0.00322271199728329,0.00256793824001922,0.00250557373917462,0.00294148108039145,0.00382334794321466,0.00504901432949607,0.00621800318298147,0.00658267227477575,0.00603063655552868,0.00523358696369319,0.00428933036510203,0.00300210021362761,0.00161494795863646,0.000600816980451582,0.000139141621894052],[0.000302725449109299,8.99194491711984e-05,4.4108973465317e-05,3.33560811857557e-05,3.62957661248322e-05,5.30418391287529e-05,9.71640888533531e-05,0.000208232848028921,0.000487252285917484,0.00116163483792045,0.00263251177039291,0.00529093666703953,0.00880534387801335,0.011440034989837,0.0129904887005485,0.0118473213626185,0.00783851704560356,0.00485204451723674,0.00331334988804532,0.00264020957603009,0.00257609443922856,0.00302423342641246,0.00393081193837268,0.00519074899134601,0.00639234257344617,0.00676716657554908,0.00619975536341275,0.00538047488296415,0.0044098338893892,0.00308655267138382,0.00166044325145042,0.000617760494178844,0.00014306738940875],[0.000311265164242503,9.2456581597904e-05,4.53535938418464e-05,3.42972982237767e-05,3.73199299056793e-05,5.45385039163129e-05,9.99056128097613e-05,0.000214107550776966,0.000500994790956304,0.00119437495749068,0.00270659551432604,0.00543942538438215,0.00905156597764162,0.0117590564138487,0.013352162718703,0.0121775606281946,0.00805792373935744,0.00498827761358515,0.00340652823273704,0.0027145093608355,0.00264859471149106,0.0031093065745706,0.00404128420285134,0.00533644105296022,0.00657153774086375,0.00695679553594023,0.00637358640571448,0.00553146249254415,0.00453370739922599,0.0031733733100049,0.00170721801726811,0.000635181524699966,0.000147103902960043],[0.0003200457028275,9.50652939666104e-05,4.66333319624093e-05,3.526507288605e-05,3.83729915804313e-05,5.60773972521806e-05,0.000102724482023505,0.00022014795520631,0.000515124691022618,0.00122803670708795,0.0027827582947029,0.00559205797000361,0.00930460850553627,0.0120868654243212,0.0137237662546352,0.0125168885760529,0.00828342053772889,0.00512831607768163,0.00350231773993446,0.00279089421126309,0.00272312982334303,0.00319676519796831,0.00415484824964736,0.00548619979516011,0.00675572209333535,0.00715170000138323,0.00655225925276828,0.00568666291179559,0.00466104426118639,0.00326262810570456,0.00175530811375233,0.000653093512438162,0.000151254285764921],[0.000329073851771471,9.77476053677913e-05,4.79491786024331e-05,3.62601544757915e-05,3.94557664710966e-05,5.76597104835786e-05,0.000105622878143245,0.000226358733005179,0.000529652895181351,0.00126264596562865,0.0028610581242639,0.00574894873373986,0.00956465672692549,0.0124236979331973,0.0141055640194169,0.0128655487550445,0.0085151735757947,0.00527226508193097,0.00360079105792233,0.00286942230636945,0.00279975656800291,0.00328667574831316,0.00427158987038622,0.00564013744738365,0.00694503259985021,0.00735202456391344,0.00673590693940328,0.00584619230709558,0.00479194037859889,0.003354384848158,0.00180475039633667,0.000671510275124057,0.000155521749066772],[0.00033835658899835,0.000100505591823105,4.9302152484687e-05,3.72833134341714e-05,4.05690928994578e-05,5.92866685601315e-05,0.000108603044328563,0.000232744687452935,0.000544590619043701,0.00129822933499012,0.0029415546155783,0.0059102150628832,0.00983190073197177,0.0127697958386447,0.0144978273358868,0.01322379086867,0.00875335335575493,0.00542023264162956,0.00370202282628754,0.00295015342951688,0.00287853330567176,0.00337910650348299,0.00439159719522274,0.00579836926330389,0.00713960987938265,0.00755791765517252,0.00692466605197793,0.00601016996967996,0.00492649425761668,0.00344871318894281,0.00185558274558048,0.000690446018330839,0.000159909594613315],[0.000347901088810525,0.000103341387889377,5.0693301067299e-05,3.83353419364424e-05,4.1713832835673e-05,6.09595309811897e-05,0.000111667286982755,0.000239310757119865,0.000559949393343732,0.00133481415999547,0.00302430902408116,0.00607597750071029,0.0101065355496219,0.0131254071572303,0.0149008342785129,0.0135918709094913,0.00899813485233678,0.00557232968816851,0.00380608972879187,0.00303314901152444,0.00295952000573161,0.00347412761628564,0.00451496075418577,0.00596101359815976,0.00733959829187489,0.00776953164133739,0.00711867681727781,0.00617871839523205,0.00506480707484439,0.0035456846911932,0.00190784409525039,0.000709915346300341,0.000164421217204103],[0.000357714727400209,0.000106257188307696,5.21237013539789e-05,3.9417054504872e-05,4.28908725651587e-05,6.26795927698374e-05,0.000114817977534351,0.000246062019670614,0.000575741072752792,0.00137242854893888,0.0031093842922058,0.00624635982676466,0.010388761263458,0.0134907861578591,0.0153148698147285,0.013970051295241,0.00924969762019806,0.00572867014391194,0.00391307054755038,0.00311847217491704,0.00304277829002073,0.00357181116443862,0.00464177353999407,0.00612819198782424,0.00754514603112473,0.00798702291998977,0.00731808319329706,0.00635196336524085,0.00520698274654841,0.00364537288049309,0.00196157446114624,0.000729933273067866,0.000169060107309553],[0.000367805088514623,0.0001092552496989,5.35944607270629e-05,4.05292886389475e-05,4.4101123374264e-05,6.44481854743288e-05,0.000118057554268725,0.000253003695774116,0.000591977844938218,0.00141110139466492,0.00319684509463611,0.0064214891389181,0.0106787831295417,0.0138661934974286,0.0157402259476604,0.014358601006574,0.00950822590333513,0.00588937099877619,0.00402304621854201,0.00320618777929711,0.00312837147720974,0.00367223120179459,0.0047721310723705,0.00630002922963466,0.00775640521959625,0.00821055201894123,0.00752303296192282,0.00653003403015252,0.00535312799947763,0.0037478532970341,0.00201681497068981,0.000750515233893809,0.000173829853763497],[0.000378179969279208,0.000112337892306741,5.51067178040313e-05,4.16729054633441e-05,4.53455222552689e-05,6.62666781977307e-05,0.000121388524211218,0.000260141153123004,0.000608672239872969,0.00145086239621646,0.0032867578847035,0.00660149593723469,0.010976811696241,0.0142518963581391,0.016177201860155,0.0147577957263923,0.00977390874649707,0.00605455238853552,0.00413609988847885,0.00329636246786326,0.0032163646283031,0.00377546381083858,0.00490613146388162,0.00647665346500932,0.00797353200517005,0.00844028369702724,0.00773367782354067,0.00671306299433846,0.00550335244332115,0.00385320354906444,0.00207360789329498,0.000771677097010345,0.000178734146531302],[0.000388847386183247,0.000115507501790063,5.66616433181503e-05,4.28487903941517e-05,4.66250326312468e-05,6.81364786565576e-05,0.000124813465063174,0.000267479910565531,0.000625837139402996,0.00149174208106542,0.00337919094195299,0.00678651420966023,0.0112830629260249,0.0146481685863983,0.0166261040600055,0.0151679179806718,0.0100469401086055,0.00622433767487917,0.00425231697306112,0.00338906471510096,0.00330682459329033,0.00388158715648314,0.00504387548732996,0.00665819626387382,0.00819668665984812,0.00867638704688177,0.00795017349357801,0.00690118640290241,0.00565776864482934,0.00396150336765529,0.00213199667153837,0.000793435175691616,0.000183776779555674],[0.000399815581232361,0.000118766531065384,5.82604410239248e-05,4.40578538238801e-05,4.79406451013542e-05,7.00590342692195e-05,0.000128335027192429,0.000275025642353118,0.000643485787079349,0.0015337718279415,0.00347421442090413,0.00697668151955938,0.0115977583192081,0.0150552908332471,0.0170872465262683,0.0155892572807108,0.0103275189781765,0.00639885352724424,0.00437178521664472,0.00348436487567053,0.00339982005897232,0.00399068154118791,0.00518546664472576,0.00684479271091988,0.00842603368042698,0.00891903559970217,0.0081726798010006,0.00709454403034813,0.00581649220362427,0.00407283466281106,0.00219202595314978,0.000815806240656119,0.00018896165368231],[0.000411093028272471,0.000122117502201276,5.99043486280516e-05,4.53010318257636e-05,4.92933782071176e-05,7.20358332751151e-05,0.000131955935679717,0.000282784182506749,0.000661631798262185,0.00157698389027384,0.00357190040103168,0.00717213909512159,0.0119211250396217,0.0154735506962296,0.0175609508565524,0.0160221102667104,0.0106158494907378,0.00657823000644817,0.00449459475334836,0.00358233523451774,0.0034954215979876,0.00410282946143021,0.0053310112378651,0.00703658149371838,0.00866174189115069,0.00916840743201185,0.00840136078877582,0.00729327937112825,0.00597964182972526,0.00418728158095034,0.00225374162384241,0.000838807532810178,0.000194292779667623],[0.00042268843948994,0.000125563008365996,6.15946387465978e-05,4.65792868779155e-05,5.06842792203137e-05,7.40684058852367e-05,0.00013567899242261,0.000290761529305504,0.000680289170504038,0.00162141142026137,0.00367232293799231,0.00737303192065603,0.0122533960421846,0.015903242862621,0.0180475464151512,0.0164667808525906,0.0109121410482306,0.00676260065014381,0.00462083816962753,0.00368305005823302,0.00359370171906434,0.00421811566555338,0.00548061844054106,0.00723370499270768,0.00890398454835356,0.00942468527442609,0.00863638481631488,0.00749753973209381,0.00614733942281451,0.00430493056378442,0.00231719084100269,0.000862456776341615,0.000199774281270839],[0.000434610772092744,0.000129105715829874,6.33326198891354e-05,4.78936086078862e-05,5.21144249530449e-05,7.61583254651665e-05,0.000139507078298565,0.000298963849900608,0.000699472294219894,0.00166708849358752,0.00377555811612293,0.00757950882979448,0.0125948102023426,0.0163446692539174,0.0185473704818787,0.0169235803719373,0.0112166084403838,0.00695210256011938,0.00475061056834221,0.00378658564768512,0.00369473491852384,0.00433662721301984,0.00563440037241435,0.00743630937307679,0.00915293944710041,0.00968805662242385,0.00887792466390363,0.00770747632686268,0.00631971015326775,0.00442587040862039,0.00238242206826061,0.000886772192172988,0.000205410398432804],[0.000446869235177633,0.000132748366023968,6.51196374705935e-05,4.92450145582003e-05,5.35849225906392e-05,7.83072097513789e-05,0.000143443155388755,0.000307397485058485,0.000719195963651813,0.00171405013479573,0.00388168410223704,0.00779172260062005,0.0129456124473381,0.0167981391714863,0.0190607684014589,0.0173928277249628,0.0115294719680415,0.00714687649146459,0.00488400963434582,0.00389302039195557,0.00379859773306148,0.00445845353509595,0.00579247217456943,0.00764454467856234,0.0094087890298295,0.00995871384912574,0.00912615763913018,0.0079232443721239,0.00649688254497383,0.00455019233011593,0.00244948511096105,0.000911772511783946,0.000211205490543926],[0.000459473296788407,0.000136493777656587,6.69570748516057e-05,5.06345509734641e-05,5.50969105480129e-05,8.05167221017805e-05,0.000147490269264368,0.000316068954036379,0.000739475388136045,0.00176233234334214,0.00399078120074548,0.00800983005273797,0.0133060538892694,0.0172639694432638,0.0195880937333079,0.0178748495263567,0.0118509575684221,0.00734706694362318,0.00502113570162212,0.00400243482360029,0.00390536879383144,0.00458368649699563,0.00595495208678181,0.00785856492717639,0.00967172049700154,0.0102368543200754,0.00938126568531489,0.0081450031858934,0.00667898855996662,0.00467799002351283,0.00251843115255767,0.000937476991412556,0.000217164039803733],[0.000472432691170513,0.000140344848889272,6.88463544081536e-05,5.20632936096481e-05,5.66515593501582e-05,8.27885727814518e-05,0.000151651551337139,0.000324984959594217,0.000760326203680762,0.00181197212034249,0.00410293191012827,0.00823399214630354,0.01367639195989,0.0177424845713757,0.0201297084015315,0.0183699802538909,0.0121812969422846,0.00755282225335119,0.0051620918219974,0.00411491167526515,0.00401512888186171,0.00471242046150997,0.00612196152652194,0.00807852820888128,0.00994192591975477,0.010522680510019,0.00964343549194607,0.00837291628773485,0.00686616368489189,0.0048093597293765,0.00258931279195083,0.000963905426645639,0.000223290654674594],[0.000485757426227373,0.00014430455957393,7.07889386313312e-05,5.35323485661707e-05,5.82500725374335e-05,8.51245202845779e-05,0.000155930221275886,0.000334152393146478,0.000781764484862788,0.00186300749603041,0.00421822098078423,0.00846437408302016,0.014056890547095,0.0182340168805521,0.0206859828449546,0.0188785623976325,0.0125207276829691,0.00776429468959873,0.00530698383545462,0.00423053593768203,0.0041279609848259,0.00484475235415002,0.0062936251697202,0.00830459678522572,0.0102196023545639,0.0108164001216728,0.00991285860712197,0.00860715150095808,0.00705854701933088,0.0049444002998685,0.00266218408179149,0.00099107816740843,0.000229590073432233],[0.000499457791183949,0.000148375973552801,7.27863312580722e-05,5.50428531414218e-05,5.9893687596352e-05,8.75263726935821e-05,0.000160329589490923,0.000343578340057935,0.000803806757051847,0.00191547755794488,0.00433673547428527,0.00870114540911915,0.0144478201330334,0.0187389066671897,0.0212572961669788,0.0194009466096065,0.0128694934072775,0.00798164055033191,0.00545592044207624,0.00434939491907255,0.0042439503551989,0.00498078172982979,0.00647007103331749,0.00853693719095485,0.0105049519598973,0.0111182262064678,0.0101897315519969,0.00884788105680499,0.00725628136600137,0.00508321326657934,0.00273710056777361,0.00101901613336415,0.000236067167815718],[0.00051354436446322,0.000152562241023045,7.48400784337172e-05,5.6595976712389e-05,6.15836769165903e-05,8.99959890765126e-05,0.000164853059688225,0.000353270085087255,0.000826470008971141,0.00196942247986471,0.00445856482406256,0.00894448012033068,0.0148494579337792,0.0192575023489086,0.0218440362850558,0.0199374918537382,0.0132278438881519,0.00820502026131,0.00560901327564223,0.00447157830598642,0.00436318456982306,0.00512061084111657,0.0066514305596245,0.00877572033760517,0.0107981821148633,0.0114283772872537,0.0104742559372265,0.00909528170063141,0.00745951332285581,0.0052259029099482,0.00281411932893754,0.00104774082973427,0.000242726946779698],[0.00052802802178138,0.00015686660096772,7.69517699073065e-05,5.8192921639059e-05,6.33213487749467e-05,9.2535280923747e-05,0.000169504131495297,0.000363235117982523,0.000849771705603245,0.00202488355150842,0.00458380089755151,0.00919455676885314,0.0152620880404867,0.0197901606144364,0.0224466000795448,0.0204885655558943,0.0135960351891049,0.00843459847683124,0.00576637697890936,0.00459717822560141,0.00448575359091217,0.00526434470807538,0.0068378387025128,0.00902112161909303,0.0110995055398342,0.0117470774829426,0.0107666385814031,0.00934953480009078,0.00766839337709526,0.00537257633029666,0.0028932990190076,0.00107727436355062,0.00024957456035173],[0.000542919944467727,0.000161292383655049,7.91230402605264e-05,5.98349241942976e-05,6.5108048347016e-05,9.51462136251275e-05,0.000174286403160768,0.0003734811392329,0.000873729801450546,0.00208190320901834,0.00471253805982269,0.00945155857232609,0.0156860015619474,0.0203372465736407,0.0230653935417118,0.0210545437538239,0.0139743298003487,0.00867054418245898,0.0059281292805975,0.00472628930951231,0.00461174982852021,0.00541209118973452,0.00702943401545929,0.00927332101930354,0.0114091404190305,0.0120745566350675,0.0110670916314703,0.00961082645532322,0.00788307600111602,0.00552334352050286,0.00297469990878724,0.00110763946035059,0.000256615303597618],[0.000558231628015389,0.000165843013207843,8.13555701712457e-05,6.15232555199177e-05,6.69451587473497e-05,9.78308079886514e-05,0.000179203574329738,0.000384016065980699,0.000898362754159672,0.00214052506624786,0.00484487323872603,0.00971567352480934,0.0161214967684584,0.0208991339075181,0.023700831920607,0.0216358112467927,0.0143629967765636,0.00891303079973779,0.00609439107410837,0.00485900875903578,0.00474126820450209,0.0055639610571984,0.00722635874146518,0.00953250322168394,0.0117273105250469,0.0124110504362267,0.0113758326850997,0.00987934761115099,0.00810371975040507,0.00567831744034245,0.00305838392963545,0.00113885948132719,0.00026385462069775],[0.000573974890869145,0.000170522010245072,8.3651087712622e-05,6.32592226096775e-05,6.88341020989119e-05,0.000100591141801892,0.000184259448897021,0.000394848038098321,0.000923689538519628,0.00220079394687147,0.00498090599157519,0.00998709450976799,0.0165688792369039,0.0214762050179331,0.0243533398685449,0.0222327617446846,0.0147623118762408,0.00916223629290734,0.0062652864980015,0.0049954364120584,0.00487440621799344,0.00572006806843418,0.00742875890486917,0.00979885772084351,0.0120542453452941,0.0127568005603792,0.0116930849150118,0.0101552941712786,0.00833048736339813,0.00583761409252225,0.00314441471804859,0.00117095844094574,0.000271298109137547],[0.000590161883456828,0.000175332994597573,8.60113696887678e-05,6.50441693199608e-05,7.07763406326456e-05,0.000103429351437341,0.000189457937940432,0.000405985424434565,0.000949729660843535,0.00226275591733719,0.00512073857339933,0.0102660194150606,0.0170284619969409,0.0220688511768877,0.0250233515848907,0.0228457980163314,0.0151725577025254,0.00941834327761926,0.00644094301825171,0.00513567481145488,0.00501126401243674,0.00588052904475799,0.00763678440507363,0.0100725789361588,0.0123901802103286,0.0131120547949525,0.0120190771952151,0.0104388671144925,0.0085635458633132,0.0060013526004324,0.00323285766137195,0.00120396102503952,0.000278951524015142],[0.000606805097470897,0.000180279688099991,8.84382430080114e-05,6.68794774089226e-05,7.27733778180024e-05,0.000106347633502906,0.000194803062736375,0.000417436829234998,0.000976503173744196,0.00232645832068186,0.00526447600678902,0.0105526512499244,0.0175005656781726,0.0226774726750854,0.0257113109578397,0.0234753320368158,0.0155940238454796,0.0096815391316599,0.00662149151231172,0.00527982927510324,0.00515194444418055,0.00604546394904616,0.00785058911220123,0.0103538663273803,0.0127353564240359,0.0134770671747176,0.0123540442291371,0.0107302726128528,0.00880306666196989,0.00616965528764185,0.00332377994466588,0.00123789260939669,0.000286820782469597],[0.000623917375407002,0.000185365917461046,9.0933586094799e-05,6.87665676048936e-05,7.48267595252999e-05,0.000109348246538833,0.000200298957860007,0.000429211098741151,0.00100403069131388,0.0023919498112296,0.00541222615336318,0.010847198263948,0.0179855186581816,0.02330247896954,0.026417671703859,0.0241217851334762,0.0160270070256782,0.00995201610767936,0.00680706635500269,0.00542800796752388,0.00529655315267896,0.00621499596569656,0.0080703309646978,0.010642924512234,0.0130900213956285,0.0138520981173803,0.0126982266796123,0.0110297221518651,0.0090492256656033,0.00634264775916205,0.00341725059875133,0.00127277927885142,0.000294911968232943],[0.000641511920366488,0.000190595617214355,9.34993303413313e-05,7.07069007048742e-05,7.69380752208055e-05,0.000112433512762348,0.000205949874372348,0.000441317327973464,0.00103233340471902,0.0024592803901945,0.00556409978688351,0.0111498740680188,0.0184836572112856,0.0239442888299606,0.0271428975044366,0.0247855881303233,0.0164718112390378,0.010229971447924,0.0069978055062548,0.00558032197316878,0.00544519863231775,0.00638925158236441,0.0082961720688961,0.0109399633860064,0.0134544287734143,0.0142374145608313,0.0130518713006893,0.0113374326526172,0.00930220338267883,0.00652045898450265,0.00351334054946031,0.00130864784689219,0.000303231336309527],[0.000659602306130017,0.000195972832752016,9.61374616000409e-05,7.27019787039538e-05,7.91089591954617e-05,0.000115605819861363,0.000211760183096751,0.000453764867703018,0.00106143309822079,0.00252850144220894,0.00572021066804261,0.0114608977572288,0.0189953256578655,0.0246033304836306,0.0278874621397698,0.0254671814905631,0.0169287479027751,0.0105156075009672,0.0071938506007189,0.00573688537138729,0.00559799230589393,0.00656836067349642,0.00852827880055309,0.0112451982430997,0.0138288385802836,0.0146332901019931,0.0134152310712131,0.0116536265958618,0.00956218503371187,0.0067032213825426,0.00361212266811669,0.0013455258758007,0.000311785317786146],[0.000678202487509614,0.000201501723443279,9.88500217180625e-05,7.47533459565326e-05,8.13410918282005e-05,0.000118867622838614,0.000217734377987228,0.00046656333161724,0.00109135216563272,0.00259966577279893,0.00588067562095171,0.011780494035717,0.0195208765141075,0.0252800417584763,0.0286518496189959,0.0261670154568995,0.0173981360023791,0.0108091318404286,0.00739534703926922,0.00589781531309412,0.00575504859977462,0.00675245658568629,0.00876682190837164,0.0115588499005395,0.0142135173508609,0.0150400051371906,0.0137885653301324,0.0119785321480221,0.00982936066309398,0.00689107090823905,0.00371367182327326,0.00138344169733499,0.00032058052477662]],"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="bibliografia" class="slide level2 smaller test">
+<h2>Bibliografia</h2>
+<div class="pp">
+<p>G.Tutz, &amp; M.Schmid, “Modeling discrete time-to-event data”. Springer, 2016</p>
+<p>R.Demicheli, A.Abbattista, R.Miceli, P. Valagussa, &amp; G. Bonadonna, G., “Time distribution of the recurrence risk for breast cancer patients undergoing mastectomy: further support about the concept of tumor dormancy”. Breast cancer research and treatment, 41, 177-185, 1996.</p>
+<p>R.Demicheli, R., I.Ardoino, P.Boracchi, D.Coradini, R.Agresti, C.Ferraris, et al., “Recurrence and mortality according to estrogen receptor status for breast cancer patients undergoing conservative surgery. Ipsilateral breast tumour recurrence dynamics provides clues for tumour biology within the residual breast”. BMC cancer, 10(1), 1-9, 2010.</p>
+<p>F.E.Harrell, “Regression modeling strategies: with applications to linear models, logistic regression, and survival analysis”. Springer, 2001.</p>
+<p>J. P. Fine and R. J. Gray, “A proportional hazards model for the subdistribution of a competing risk,” Journal of the American Statistical Association, vol.&nbsp;94, no. 446, pp.&nbsp;496–509, 1999.</p>
+<p>M. Berger, M. Schmid, T. Welchowski, S. Schmitz-Valckenberg, and J. Beyersmann, “Subdistribution hazard models for competing risks in discrete time,” Biostatistics, vol.&nbsp;21, no. 3, pp.&nbsp;449–466, 2018.</p>
+<p>F. Ambrogi, E. Biganzoli, and P. Boracchi, “Estimates of clinically useful measures in competing risks survival analysis,” Statistics in Medicine, vol.&nbsp;27, pp.&nbsp;6407–6425, 2008.</p>
+<p>G. Tutz and L. Pritscher, “Nonparametric estimation of discrete hazard functions,” Lifetime Data Analysis, vol.&nbsp;2, pp.&nbsp;291–308, 1996.</p>
+<p>R. J. Gray, “Hazard rate regression using ordinary nonparametric regression smoothers,” Journal of Computational and Graphical Statistics, vol.&nbsp;5, pp.&nbsp;190–207, 1996.</p>
+<p>P. Joly, D. Commenges, and L. Letenneur, “A penalized likelihood approach for arbitrarily censored and truncated data: Application to age-specific incidence of dementia.” Biometrics, vol.&nbsp;5, pp.&nbsp;185–194, 1998.</p>
+<p>T. Cai, R. J. Hyndman, and M. Wand, “Mixed model-based hazard estimation,” Journal of Computational and Graphical Statistics, vol.&nbsp;11, pp.&nbsp;784–798, 2002.</p>
+<p>T. Cai and R. A. ; Betensky, “Hazard regression for interval-censored data with penalized spline,” Biometrics, vol.&nbsp;3, pp.&nbsp;570–579, 2003.</p>
+<p>J. E. Herndon and F. E. Harrell, “The restricted cubic spline as baseline hazard in the proportional hazards model with step function time-dependent covariables,” Statistics in Medicine, vol.&nbsp;14, pp.&nbsp;2119–2129, 1995.</p>
+<p>V. Sypsa, G. Touloumi, M. Kenward, A. Karafoulidou, and A. Hatzakis, “Statistical models versus machine learning for competing risks: development and validation of prognostic models,” Statistics in Medicine, vol.&nbsp;20, pp.&nbsp;3677 – 3694, 2001.</p>
+<p>E. Biganzoli, P. Boracchi, F. Ambrogi, and E. Marubini, “Artificial neural network for the joint modelling of discrete cause-specific hazards,” Artificial Intelligence in Medicine, vol.&nbsp;37, pp.&nbsp;119–130, 2006.</p>
+<p>G. Kantidakis, H. Putter, S. Litiere, and M. Fiocco, “Statistical models versus machine learning for competing risks: development and validation of prognostic models,” BMC Medical Research Methodology, vol.&nbsp;14, 2023.</p>
+<p>P. S. Rosenberg, “Hazard function estimation using b-splines,” Biometrics, vol.&nbsp;51, pp.&nbsp;874–887, 1995.</p>
+<p>H. Akaike, “Information theory and an extension of the maximum likelihood principle.” Proceedings of the Second International Symposium on Information Theory, pp.&nbsp;267–281, 1973.</p>
+<p>Discrete-time survival forests with Hellinger distance decision trees - Matthias Schmid, Thomas Welchowski, Marvin N. Wright, Moritz Berger</p>
+<p>Willems S, Schat A, van Noorden MS, Fiocco M. Correcting for dependent censoring in routine outcome monitoring data by applying the inverse probability censoring weighted estimator. Stat Methods Med Res. 2018 Feb;27(2):323-335.</p>
+<p>Matsuyama Y, Yamaguchi T. Estimation of the marginal survival time in the presence of dependent competing risks using inverse probability of censoring weighted (IPCW) methods. Pharm Stat. 2008 Jul-Sep;7(3):202-14.</p>
+</div>
+
+<img src="logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="PP_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="PP_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="PP_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="PP_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
